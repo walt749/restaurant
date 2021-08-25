@@ -1,0 +1,127 @@
+/*style the entire navbar */
+.navbar-expand-lg {
+  background-color: #006838;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/*style bagel icon*/
+.bagelIcon {
+  width: 10%;
+  height: 10%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/*styles the munch bagels word */
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #d8b693 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+
+/* hide the order-online button while in mobile version */
+.order-button {
+  display: none;
+}
+
+/*style the navbar toggler */
+.navbar-toggler {
+  line-height: 0;
+}
+
+/*center all hamburger menu items */
+#navbarNav {
+  text-align: center;
+}
+
+.navbar-nav {
+  margin-left: right;
+}
+
+/*overwrite bootstrap default */
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.nav-item.order-link {
+  font-size: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgb(1, 82, 1);
+}
+
+/* WEBSITE VERSION CODE*/
+@media only screen and (min-width: 990px) {
+  .bagelIcon {
+    width: 6.5rem;
+    padding-left: 1rem;
+  }
+
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  /* this styles and push the links from the bottom right to the end of the page*/
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  /* style the collapsing navbar */
+  .navbar-collapse {
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  .main-list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 0px !important;
+  }
+
+  .nav-links {
+    font-size: 25px;
+  }
+
+  /*hides the link called ORDER ONLINE in bottom right links section*/
+  .order-link {
+    display: none;
+  }
+
+  /* display order-online link while in full- browser display */
+  .order-button {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    border-radius: 15px;
+    background-color: #725429;
+  }
+
+  .order-button :hover {
+    background-color: #5b4320;
+  }
+
+  /* overwrite current blue color to black */
+  .order-button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* style the nav links on the bottom right */
+  .nav-item {
+    width: 150px;
+  }
+}
